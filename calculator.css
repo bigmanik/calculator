@@ -1,0 +1,158 @@
+body{
+	background-color: #a841d0;
+background-image: linear-gradient(43deg, #a841d0 0%, #5056c8 46%, #FFCC70 100%);
+
+}
+
+
+  .darkmode {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+   left: 80%;
+  display: inline-block;
+  outline: none;
+  border: 1px solid #000;
+  color: #000;
+  background: transparent;
+}
+.darkmode:hover:after {
+  top: 0;
+  left: 0;
+}
+.darkmode:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  background-color: #3d348b;
+}
+
+.container{
+	max-width: 400px;
+	margin: 10vh auto 0 auto;
+	box-shadow:  0px 0px 43px 17px rgba(153, 153, 153, 1.0);
+
+}
+#display{
+	text-align: 70px;
+	height: 70px;
+	line-height: 70px;
+	padding: 16px 8px;
+	font-size: 25px;
+}
+
+.buttons{
+  display: grid ;
+  border-bottom: 1px solid #999;
+  border-left:1px solid #999 ;
+  grid-template-columns: 1fr  1fr  1fr  1fr;
+}
+
+.buttons > div{
+border-top:1px solid #999 ;
+border-right: 1px solid #999;
+	
+}
+
+.button{
+	border: 0.5px solid #999;
+	line-height: 100px;
+	text-align: center;
+	font-size: 25px;
+	cursor: pointer;
+}
+#equal{
+	background: rgb(247,150,192);
+background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
+  line-height: px;
+  padding: 0;
+  border: none;
+
+}
+.button:hover{
+	background-color:black ;
+	color: white;
+	transition: 0.3s ease-in-out;
+
+}
+
+#equal span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;}
+#equal:before,
+#equal:after {
+  position: absolute;
+  content: "";
+  height: 0%;
+  width: 1px;
+ box-shadow:
+   -1px -1px 20px 0px rgba(255,255,255,1),
+   -4px -4px 5px 0px rgba(255,255,255,1),
+   7px 7px 20px 0px rgba(0,0,0,.4),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+}
+#equal:before {
+  right: 0;
+  top: 0;
+  transition: all 500ms ease;
+}
+#equal:after {
+  left: 0;
+  bottom: 0;
+  transition: all 500ms ease;
+}
+#equal:hover{
+  background: transparent;
+  color: #76aef1;
+  box-shadow: none;
+}
+#equal:hover:before {
+  transition: all 500ms ease;
+  height: 100%;
+}
+#equal:hover:after {
+  transition: all 500ms ease;
+  height: 100%;
+}
+#equal span:before,
+#equal span:after {
+  position: absolute;
+  content: "";
+  box-shadow:
+   -1px -1px 20px 0px rgba(255,255,255,1),
+   -4px -4px 5px 0px rgba(255,255,255,1),
+   7px 7px 20px 0px rgba(0,0,0,.4),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+}
+#equal span:before {
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: .5px;
+  transition: all 500ms ease;
+}
+#equal span:after {
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: .5px;
+  transition: all 500ms ease;
+}
+#equal span:hover:before {
+  width: 100%;
+}
+#equal span:hover:after {
+  width: 100%;
+}
