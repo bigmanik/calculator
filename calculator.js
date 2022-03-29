@@ -3,9 +3,7 @@ let buttons = Array.from(document.getElementsByClassName('button'));
 let darky = document.getElementsByClassName('darkmode');
 
 
-darky.onclick = () => {
-  document.body.classList.toggle("dark-mode-s ")
-}
+
 buttons.map( button => {
   button.addEventListener('click', (e)  => {
         switch(e.target.innerText){
